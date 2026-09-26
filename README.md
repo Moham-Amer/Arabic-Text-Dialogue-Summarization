@@ -36,13 +36,13 @@ Evaluated using the Hugging Face `evaluate` library:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Moham-Amer/Arabic-Dialogue-Summarization-Seq2Seq.git
-cd Arabic-Dialogue-Summarization-Seq2Seq
+git clone https://github.com/Moham-Amer/Arabic-Text-Dialogue-Summarization
+cd Arabic-Text-Dialogue-Summarization
 
 # Install requirements
 pip install torch transformers datasets evaluate rouge-score nltk qalsadi
 
 Run in Jupyter Notebook or Google Colab:
-jupyter notebook Final_NLPL_Notebook.ipynb
+jupyter notebook Final_Notebook.ipynb
 
 ---
