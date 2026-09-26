@@ -7,8 +7,8 @@ An end-to-end Natural Language Processing (NLP) project investigating abstractiv
 
 ## Architecture & Workflow
 
-[Arabic SAMSum Dialogue] ──> [Normalization & Cleaning] ──> [Stemming vs Lemmatization] ──> [Seq2Seq Tokenization]  ──> [Hugging Face Trainer]  [ROUGE-1 / ROUGE-2 / ROUGE-L]
-                                                             (Snowball vs Qalsadi)         (DataCollatorForSeq2Seq)      (AraT5 / mT5 / mBART)    (evaluate & rouge-score)     
+[Arabic SAMSum Dialogue] ──> [Normalization & Cleaning] ──> [Stemming vs Lemmatization (Snowball vs Qalsadi)] ──> [Seq2Seq Tokenization  (DataCollatorForSeq2Seq)  ]  ──> [Hugging Face Trainer (AraT5 / mT5 / mBART)   ]  [ROUGE-1 / ROUGE-2 / ROUGE-L (evaluate & rouge-score) ]
+                                                                           
   
 ---
 
