@@ -2,20 +2,14 @@
 
 An end-to-end Natural Language Processing (NLP) project investigating abstractive summarization of Arabic conversational dialogue. This repository implements text normalization pipelines and fine-tunes three seq2seq transformer architectures (**AraT5v2**, **mT5-Small**, and **Tiny-mBART**) evaluated against **ROUGE** metrics.
 
-- **Author**: Mohammad Amer Khalil (Student ID: 202110942)
-- **Institution**: Arab International University (AIU) — Faculty of Informatics Engineering
 
 ---
 
 ## Architecture & Workflow
 
-[Arabic SAMSum Dialogue] ──> [Normalization & Cleaning] ──> [Stemming vs Lemmatization]
-                                                             (Snowball vs Qalsadi)
-                                                                       │
-                                                                       ▼
-[ROUGE-1 / ROUGE-2 / ROUGE-L] <── [Hugging Face Trainer] <── [Seq2Seq Tokenization]
- (evaluate & rouge-score)           (AraT5 / mT5 / mBART)       (DataCollatorForSeq2Seq)
-
+[Arabic SAMSum Dialogue] ──> [Normalization & Cleaning] ──> [Stemming vs Lemmatization] ──> [Seq2Seq Tokenization]  ──> [Hugging Face Trainer]  [ROUGE-1 / ROUGE-2 / ROUGE-L]
+                                                             (Snowball vs Qalsadi)         (DataCollatorForSeq2Seq)      (AraT5 / mT5 / mBART)    (evaluate & rouge-score)     
+  
 ---
 
 ## Key Components
@@ -36,15 +30,6 @@ Evaluated using the Hugging Face `evaluate` library:
 - **ROUGE-1**: Unigram overlap between generated summary and gold reference.
 - **ROUGE-2**: Bigram overlap measuring fluency and phrase capture.
 - **ROUGE-L**: Longest Common Subsequence (LCS) scoring structural coherence.
-
----
-
-## File Structure
-
-├── Final_NLPL_Notebook.ipynb    # Full 206-cell notebook: preprocessing, training loops, ROUGE evals
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
-
 ---
 
 ## Quickstart & Installation
